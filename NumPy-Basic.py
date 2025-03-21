@@ -115,23 +115,200 @@
 
 #----------------Exercise 10----------------
 
+# import numpy as np
+
+# x = np.array([3, 5])
+# y = np.array([2, 5])
+
+# print("Original numbers:")
+# print(x)
+# print(y)
+
+# print("Comparison - greater")
+# print(np.greater(x, y))
+
+# print("Comparison - greater_equal")
+# print(np.greater_equal(x, y))
+
+# print("Comparison - less")
+# print(np.less(x, y))
+
+# print("Comparison - less_equal")
+# print(np.less_equal(x, y))
+
+
+#----------------Exercise 11----------------
+
+# import numpy as np
+
+# x = np.array([72, 79, 85, 90, 150, -135, 120, -10, 60, 100])
+# y = np.array([72, 79, 85, 90, 150, -135, 120, -10, 60, 100.00001])
+
+# print("Original numbers:")
+# print(x)
+# print(y)
+
+# print("Comparison - equal:")
+# print(np.equal(x, y))
+
+# print("Comparison - equal within a tolerance:")
+# print(np.allclose(x, y)) 
+
+#----------------Exercise 12----------------
+
+# import numpy as np
+
+# x = np.array([1, 7, 13, 105])
+
+# print("Original array:")
+# print(x)
+
+# print("Size of the memory occupied by the said array:")
+# print("%d bytes" % (x.size * x.itemsize)) 
+
+#----------------Exercise 13----------------
+
+# import numpy as np
+
+# x= np.zeros(10)
+# print("An array of 10 zeros:")
+# print(x)
+
+# y = np.ones(10)
+# print("An array of 10 ones:")
+# print(y)
+
+# z=np.ones(10)*5
+# print("An array of 10 fives:")
+# print(z) 
+
+#----------------Exercise 14----------------
+
+# import numpy as np
+
+# x= np.arange(30, 71)
+# print("Array of the integers from 30 to 70")
+# print(x) 
+
+#----------------Exercise 15----------------
+
+# import numpy as np
+
+# x= np.arange(30, 71, 2)
+# print("Array of all the even integers from 30 to 70")
+# print(x) 
+
+#----------------Exercise 16----------------
+
+# import numpy as np
+
+# x=np.identity(3)
+# print('3x3 matrix:')
+# print(x) 
+
+#----------------Exercise 17----------------
+
+# import numpy as np
+
+# rand_num=np.random.normal(0, 1, 1)
+# print("Random number between 0 and 1:")
+# print(rand_num)
+
+#----------------Exercise 18----------------
+
+# import numpy as np
+
+# rand_num = np.random.normal(0, 1, 15)
+# print("15 random numbers from a standard normal distribution:")
+# print(rand_num) 
+
+#----------------Exercise 19----------------
+
+# import numpy as np
+
+# x = np.arange(15, 55)
+# print("Original vector:")
+# print(x)
+
+# print("All values except the first and last of the said vector:")
+# y=x[1:-1]
+# print(y) 
+
+#----------------Exercise 20----------------
+
+# import numpy as np
+
+# m= np.arange(20, 32).reshape((3, 4))
+# print("Original array:")
+# print(m)
+
+# print("Each element of the array is:")
+# for i in np.nditer(m):
+#     print(i, end=" ")
+
+#----------------Exercise 21----------------
+
+# import numpy as np
+
+# x = np.linspace(10, 49, 5)
+# print("Length 10 with values evenly distributed between 5 and 50:")
+# print(x)
+
+#----------------Exercise 22----------------
+
+# import numpy as np
+
+# x = np.arange(21)
+# print("Original vector:")
+# print(x)
+
+# x[(x >= 9) & (x <= 15)] *= -1
+# print("After changing the sign of the numbers in the range from 9 to 15:")
+# print(x) 
+
+#----------------Exercise 23----------------
+
+# import numpy as np
+
+# x = np.random.randint(0, 11, 5)
+# print("Vector of length 5 filled with arbitrary integers from 0 to 10:")
+# print(x)
+
+#----------------Exercise 24----------------
+
+# import numpy as np
+
+# x = np.array([1, 8, 3, 5])
+# print("Vector-1")
+# print(x)
+
+# y = np.random.randint(0, 11, 4)
+# print("Vector-2")
+# print(y)
+
+# result = x * y
+# print("Multiply the values of two said vectors:")
+# print(result) 
+
+#----------------Exercise 25----------------
+
+# import numpy as np
+
+# m= np.arange(20, 32).reshape((3, 4))
+# print(m)
+
+#----------------Exercise 26----------------
+
+# import numpy as np
+
+# x = np.arange(10, 22).reshape((3, 4))
+
+# print("Original matrix:")
+# print(x)
+
+# print("Number of rows and columns of the said matrix:")
+# print(x.shape) 
+
+#----------------Exercise 27----------------
+
 import numpy as np
-
-x = np.array([3, 5])
-y = np.array([2, 5])
-
-print("Original numbers:")
-print(x)
-print(y)
-
-print("Comparison - greater")
-print(np.greater(x, y))
-
-print("Comparison - greater_equal")
-print(np.greater_equal(x, y))
-
-print("Comparison - less")
-print(np.less(x, y))
-
-print("Comparison - less_equal")
-print(np.less_equal(x, y))
