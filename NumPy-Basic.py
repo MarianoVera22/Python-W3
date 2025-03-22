@@ -311,4 +311,115 @@
 
 #----------------Exercise 27----------------
 
+# import numpy as np
+
+# x = np.eye(3)
+# print(x)
+
+#----------------Exercise 28----------------
+
+# import numpy as np
+
+# x = np.ones((10, 10))
+
+# x[1:-1,1:-1]=0
+# print(x)
+
+#----------------Exercise 29----------------
+
+# import numpy as np
+
+# x = np.diag([1, 2, 3, 4, 5])
+# print(x) 
+
+#----------------Exercise 30----------------
+
+# import numpy as np
+
+# x = np.zeros((4, 4))
+
+# x[::2, 1::2] = 1
+# x[1::2, ::2] = 1
+# print(x)
+
+#----------------Exercise 31----------------
+
+# import numpy as np
+
+# x = np.random.random((3, 3, 3))
+# print(x)
+
+#----------------Exercise 32----------------
+
+# import numpy as np
+
+# x = np.array([[0, 1], [2, 3]])
+
+# print("Original array:")
+# print(x)
+
+# print("Sum of all elements:")
+# print(np.sum(x))
+
+# print("Sum of each column:")
+# print(np.sum(x, axis=0))
+
+# print("Sum of each row:")
+# print(np.sum(x, axis=1)) 
+
+#----------------Exercise 33----------------
+
+# import numpy as np
+
+# x = np.array([4, 5])
+# y = np.array([7, 10])
+
+# print("Original vectors:")
+# print(x)
+# print(y)
+
+# print("Inner product of said vectors:")
+# print(np.dot(x, y))
+
+#----------------Exercise 34----------------
+
+# import numpy as np
+
+# m = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
+
+# v = np.array([1, 1, 0])
+
+# print("Original matrix:")
+# print(m)
+
+# print("Original vector:")
+# print(v)
+
+# result = np.empty_like(m)
+
+# for i in range(4):
+#     result[i, :]=m[i,:]+v
+    
+# print("\nAfter adding the vector v to each row of the matrix m:")
+# print(result)
+
+
+#----------------Exercise 35----------------
+
+# import numpy as np
+# import os
+
+# x1 = np.arange(20)
+
+# np.save('temp_arra.npy', x1)
+
+# print("Check if 'temp_arra.npy' exists or not?")
+
+# if os.path.exists('temp_arra.npy'):
+#     x2 = np.load('temp_arra.npy')
+    
+# print(np.array_equal(x1, x2)) 
+
+#----------------Exercise 36----------------
+
 import numpy as np
