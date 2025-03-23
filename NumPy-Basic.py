@@ -758,6 +758,45 @@
 
 #----------------Exercise 57----------------
 
-import numpy as np
+# import numpy as np
 
+# nums = np.arange(16, dtype='int').reshape(-1, 4)
+# print("Original array:")
+# print(nums)
 
+# new_nums = nums[:, ::-1]
+# print("\nNew array after swapping first and last columns of the said array:")
+# print(new_nums) 
+
+#----------------Exercise 58----------------
+
+# import numpy as np
+
+# nums = np.array([[[1, 2, 3, 4],
+#                [0, 1, 3, 4],
+#                [90, 91, 93, 94],
+#                [5, 0, 3, 2]]])
+# print("Original array:")
+# print(nums)
+
+# new_nums = nums[::-1, ::-1]
+# print("\nSwap rows and columns of the said array in reverse order:")
+# print(new_nums) 
+
+#----------------Exercise 59----------------
+
+# import numpy as np
+
+# nums1 = np.array([[2, 5, 2],
+#               [1, 5, 5]])
+
+# nums2 = np.array([[5, 3, 4],
+#               [3, 2, 5]])
+
+# print("Array1:") 
+# print(nums1)
+# print("Array2:") 
+# print(nums2)
+
+# print("\nMultiply said arrays of same size element-by-element:")
+# print(np.multiply(nums1, nums2)) 
